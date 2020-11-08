@@ -8,6 +8,7 @@
   "dependencies": {
     "@shopify/koa-shopify-auth": "^3.1.72",
     "@shopify/polaris": "^5.10.0",
+    "@zeit/next-css": "^1.0.1",
     "dotenv": "^8.2.0",
     "http-status": "^1.4.2",
     "isomorphic-fetch": "^3.0.0",
@@ -20,6 +21,7 @@
   },
   "scripts": {
     "tunnel": "lt -p 3000 -s matej-shopify-devel --print-requests",
+    "ngrok": "ngrok http 3000",
     "dev": "nodemon server.js",
     "start": "NODE_ENV=production nodemon server.js"
   },
