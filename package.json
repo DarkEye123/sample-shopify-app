@@ -6,13 +6,22 @@
   "author": "Matej Lesko <lesko.matej.pu@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@shopify/koa-shopify-auth": "^3.1.72",
+    "@shopify/polaris": "^5.10.0",
+    "dotenv": "^8.2.0",
+    "http-status": "^1.4.2",
+    "isomorphic-fetch": "^3.0.0",
+    "koa": "^2.13.0",
+    "koa-session": "^6.1.0",
     "next": "^10.0.1",
+    "nodemon": "^2.0.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
   "scripts": {
-    "dev": "next",
-    "start": "next start"
+    "tunnel": "lt -p 3000 -s matej-shopify-devel --print-requests",
+    "dev": "nodemon server.js",
+    "start": "NODE_ENV=production nodemon server.js"
   },
   "devDependencies": {
     "@types/node": "^14.14.6",
